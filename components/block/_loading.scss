@@ -1,0 +1,20 @@
+.loading {
+    background-image: url('/assets/img/loading.svg');
+    background-position: center center;
+    transition: .28s all ease-in-out;
+    background-repeat: no-repeat;
+    background-color: #F9FAFC;
+    visibility: hidden;
+    z-index: 99999999;
+    position: fixed;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}

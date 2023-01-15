@@ -1,0 +1,109 @@
+.room-header-slider {
+    
+    .swiper-slide {
+        height: 460px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.icon-column {
+    ul {
+        gap: 14px;
+
+        li {
+            background-color: #F5F5F5;
+            width: calc(50% - 14px);
+            border-radius: 12px;
+            display: block;
+            text-align: center;
+            line-height: 1.1;
+            padding: 26px 16px;
+            margin: 0;
+
+            img {
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+.room-page {
+
+    &__image {
+        box-shadow: 0 0 12px rgb(0, 0, 0, .4);
+        border-radius: 13px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 468px;
+    }
+}
+
+/* room */
+.room-related {
+
+    &__block {
+        position: relative;
+        margin-bottom: 30px;
+        overflow: hidden;
+        border-radius: 14px;
+    }
+
+    &__image {
+        border-radius: 0 0 14px 14px;
+        position: relative;
+        overflow: hidden;
+        height: 288px;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        box-shadow: 0 10px 80px rgba(0, 0, 0, .1);
+        background-color: #F8FAFB;
+        padding: 40px;
+        padding-top: 0;
+
+        &-meta {
+            background: #FFF;
+            box-shadow: 0 5px 80px rgba(0, 0, 0, .15);
+            transform: translateY(-50%);
+            border-radius: 30px;
+            margin-bottom: -8px;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            padding: 15px 0;
+
+            .price {
+                font-weight: 800;
+                color: #2F55D4;
+            }
+        }
+        
+        &-text {
+            margin-bottom: 24px;
+            line-height: 1.4;
+            font-size: 17px;
+        }
+        
+        &-title {
+
+            a {
+                text-decoration: none;
+                color: #555;
+            }
+        }
+    }
+}

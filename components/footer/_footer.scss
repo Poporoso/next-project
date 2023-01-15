@@ -1,0 +1,124 @@
+.footer-box {
+    background-color: #202942;
+    position: relative;
+    padding-top: 88px;
+    margin-top: 88px;
+
+    &__copy {
+        border-top: 1px solid #25304D;
+        padding-bottom: 28px;
+        text-align: center;
+        padding-top: 28px;
+        margin-top: 68px;
+        font-size: 15px;
+
+        i {
+            display: inline-block;
+            color: #EC0043;
+            margin: 0 4px;
+        }
+    }
+
+    &__newsletter {
+
+        p {
+            margin-bottom: 14px;
+
+            span {
+                color: #EC0043;
+            }
+        }
+
+        button {
+            background-color: #1B253E;
+            border-color: #28314F;
+            justify-content: center;
+            width: 100%;
+
+            &:hover {
+                background-color: #172037;
+                border-color: #222A46;
+            }
+        }
+
+        input {
+            color: rgba(241, 241, 241, .84);
+            background-color: #27314F;
+            border-color: #27314F;
+            margin-bottom: 12px;
+            padding: 9px 12px;
+
+            &:focus {
+                background-color: #2D3858;
+                border-color: #2A3452;
+                box-shadow: none;
+                color: white;
+            }
+        }
+    }
+
+    &__title {
+        letter-spacing: 1px;
+        margin-bottom: 32px;
+        font-weight: 600;
+        font-size: 22px;
+        color: white;
+    }
+
+    &__logo {
+        opacity: .8;
+
+        img {
+            max-width: 188px;
+        }
+
+        p {
+            margin: 14px 0;
+        }
+    }
+
+    &__menu {
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        li {
+            width: 44%;
+
+            a {
+                color: rgba(white, .68);
+                position: relative;
+                padding-left: 24px;
+
+                &::after {
+                    font-family: "Ionicons";
+                    position: absolute;
+                    content: "\f375";
+                    font-size: 18px;
+                    line-height: 1;
+                    z-index: 1;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+    &:after {
+        background-image: url('/assets/img/bg-footer.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 108px;
+        top: -106px;
+        content: '';
+        z-index: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

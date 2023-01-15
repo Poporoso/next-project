@@ -1,0 +1,76 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+/* Import */
+@import 'base/variables';
+@import 'base/base';
+@import 'base/normalize';
+@import 'utilities/mixins';
+@import 'utilities/breakpoints';
+@import 'utilities/colours';
+@import 'utilities/utility';
+@import 'base/typography';
+
+/* Navbar */
+@import '../../components/navbar/navbar';
+@import '../../components/navbar/lingue';
+@import '../../components/navbar/menu';
+
+/* Components */
+@import '../../components/carousel/carousel';
+@import '../../components/header/header-page';
+@import '../../components/footer/footer';
+
+/* Booking < -- > Rooms */
+@import '../../components/booking/booking';
+@import '../../components/booking/booking-step';
+@import '../../components/rooms/room-card';
+@import '../../components/rooms/camere';
+
+/* Blog */
+@import '../../components/blog/article-card';
+@import '../../components/blog/blog';
+
+/* Home */
+@import '../../components/home/home-gallery';
+@import '../../components/home/home-service';
+@import '../../components/home/home';
+
+/* Prodotti */
+@import '../../components/prodotti/prodotti';
+@import '../../components/prodotti/pagina-prodotto';
+@import '../../components/prodotti/prodotto-card';
+
+/* Search module */
+@import '../../components/search/search-module';
+
+/* Paginazione */
+@import '../../components/paginazione/paginazione';
+
+/* Gestione Users */
+@import '../../components/accesso/accesso';
+
+/* Breadcrumbs */
+@import '../../components/breadcrumbs/breadcrumbs';
+
+/* Annunci immobiliari */
+@import '../../components/annunci/annunci';
+
+/* Services / Offerte / Eventi */
+@import '../../components/services/service-card-large';
+@import '../../components/services/service-card';
+@import '../../components/offerte/offerte-card-large';
+@import '../../components/offerte/offerte-card';
+
+/* Widget */
+@import '../../components/widget/components/comment/comments';
+@import '../../components/widget/components/contact/contact';
+@import '../../components/widget/components/slider/slider';
+@import '../../components/widget/components/gallery/gallery';
+
+/* Utility */
+@import '../../components/block/loading';
+
+/* basic Style */
+@import "./style";

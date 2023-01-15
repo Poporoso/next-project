@@ -1,0 +1,49 @@
+.pagination {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+
+    li {
+        align-items: flex-end;
+        flex-direction: row;
+        margin-right: 4px;
+        flex-wrap: nowrap;
+        display: flex;
+
+        > span {
+            line-height: 1.9;
+            padding: 0 8px;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+            width: 34px;
+            padding: 5px;
+            height: 34px;
+            color: #555;
+        }
+
+        &:hover {
+
+            &:not(.active) {
+
+                a {
+                    background-color: #EEE;
+                }                
+            }
+        }
+
+        &.active {
+
+            a {
+                background-color: #7467F0;
+                color: white;
+            }
+        }
+    }
+}

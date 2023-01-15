@@ -1,0 +1,23 @@
+//== Base
+html,
+body {
+    background:   $background-primary;
+    font-family:  $font-family;
+    line-height:  $font-height;
+    color:        $font-color;
+    font-size:    $font-size;
+    word-spacing: .05rem;
+    margin:       0;
+}
+
+a {
+    color: $color-link;
+}
+ 
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+}

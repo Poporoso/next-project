@@ -1,0 +1,29 @@
+
+.breadcrumb {
+    align-items: center;
+    color: #3056D4;
+    font-weight: 600;
+    display: flex;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: #424448;
+
+        &:hover {
+            color: #3056D4;
+        }
+    }
+
+    &-item + &-item {
+        font-size: 15px;
+
+        &::before {
+            font-family: "Ionicons";
+            padding: 0 8px 0 3px;
+            content: "\f125";
+            line-height: 2.1;
+            font-size: 12px;
+        }    
+    }
+}

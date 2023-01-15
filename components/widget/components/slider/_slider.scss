@@ -1,0 +1,100 @@
+.slider-widget {
+
+    .carousel {
+        margin-top: -9px;
+
+        &-status {
+            display: none;
+        }
+
+        .slider-wrapper {
+            height: auto !important;
+
+            .slide {
+
+                &::after {
+                    display: none;
+                }
+
+                > div {
+                    border-radius: 6px;
+                    max-height: 568px;
+                    overflow: hidden;
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .control-dots {
+
+            .dot {
+                box-shadow: none;
+                border-radius: 0;
+                margin: -0 3px;
+                width: 24px;
+                height: 6px;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .thumbs-wrapper {
+            padding: 8px 0 0;
+            margin: 0;
+
+            .thumbs {
+                justify-content: flex-start;
+                align-items: stretch;
+                flex-wrap: nowrap;
+                align-content: center;
+                flex-direction: row;
+                display: flex;
+                margin: 0;
+                padding: 0;
+
+                .thumb {
+                    border-radius: 6px;
+                    position: relative;
+                    margin: 3px 1px;
+                    width: 100%;
+                    height: 80px;
+                    border: none;
+                    padding: 0;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &.selected {
+                        position: relative;
+                        border: none;
+                        height: 80px;
+
+                        &:after {
+                            border: 4px solid #3056D4;
+                            position: absolute;
+                            content: '';
+                            z-index: 1;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

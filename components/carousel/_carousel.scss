@@ -1,0 +1,90 @@
+/* Carousel */
+.custom-carousel {
+
+    .swiper-button {
+
+        &-next,
+        &-prev {
+            background-color: rgba(white, .28);
+            transform: translateY(-50%);
+            position: absolute;
+            cursor: pointer;
+            opacity: 0.48;
+            padding: 0 10px;
+            height: 40px;
+            width: 48px;
+            z-index: 4;
+            top: 50%;
+            left: 0;
+
+            &::after {
+                font-family: "Ionicons";
+                content: "\f2ca";
+                line-height: .96;
+                font-size: 44px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &-next {
+            transform: rotate(180deg) translateY(50%);
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .swiper-pagination {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+
+        .swiper-pagination-bullet {
+            background-color: white;
+            border-radius: 0;
+            display: block;
+            height: 8px;
+        }
+    }
+
+    &__caption {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 88px;
+            color: white;
+        }
+
+        .sub-title {
+            letter-spacing: 2px;
+            font-size: 26px;
+            font-weight: 200;
+            color: white;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &:before  {
+            background-color: rgba(0, 0, 0, .08);
+            position: absolute;
+            content: '';
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+        }
+    }
+}

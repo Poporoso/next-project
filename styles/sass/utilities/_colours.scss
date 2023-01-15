@@ -1,0 +1,19 @@
+.primary {
+    &--color {
+        color: $color-primary;
+    }
+
+    &--bg {
+        background-color: $background-primary;
+    }
+}
+
+.secondary {
+    &--color {
+        color: $color-secondary;
+    }
+
+    &--bg {
+        background-color: $background-secondary;
+    }
+}

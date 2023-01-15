@@ -1,0 +1,64 @@
+.form-contatti textarea {
+  height: 128px;
+}
+.form-contatti .form-control {
+  font-size: 14px;
+}
+.form-contatti textarea {
+  height: 188px;
+}
+.form-contatti .btn-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-contatti .alert {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.form-contatti .alert i {
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  right: 10px;
+  top: 0;
+}
+.form-contatti .alert i:nth-child(1) {
+  right: auto;
+  left: 10px;
+  top: 0;
+}
+.form-contatti .alert i.close {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  font-size: 18px;
+  opacity: 0.28;
+  top: 5px;
+}
+.form-contatti .alert i.close:hover {
+  opacity: 1;
+}
+.form-contatti .alert.alert-icon {
+  padding: 8px 38px;
+}
+.form-contatti .alert-danger {
+  background-color: #FF3E66;
+  border-color: #FF3F66;
+  color: white;
+}
+.form-contatti .alert-warning {
+  background-color: #FFDD56;
+  border-color: #FFDD57;
+  margin-left: 16px;
+  color: #725B00;
+}/*# sourceMappingURL=contact.css.map */

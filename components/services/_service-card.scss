@@ -1,0 +1,40 @@
+.service-card {
+    box-shadow: 2px 2px 24px rgba(0, 0, 0, .12);
+    transition: .68s all ease;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    text-align: center;
+    color: #646668;
+    display: block;
+    cursor: pointer;
+    padding: 28px;
+
+    &:hover {
+        transform: floor($number: 0);
+        background-color: #3056D4;
+        color: white;
+    }
+
+    &__icon {
+        display: block;
+
+        .icon {
+            font-size: 48px;
+        }
+    }
+}
+
+.servizi-card {
+    box-shadow: 0 0 22px rgb(0, 0, 0, .08);
+    border-radius: 18px;
+    flex-direction: row;
+    display: flex;
+    border: none;
+
+    img {
+        border-radius: 18px 0 0 18px;
+        object-fit: cover;
+        width: 50%;
+    }
+}

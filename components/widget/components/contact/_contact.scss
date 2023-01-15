@@ -1,0 +1,83 @@
+.form-contatti {
+
+	.form-control {
+		box-shadow: 0 0 1.25rem rgb(30 34 40 / 4%);
+		background-color: #FEFEFE;
+		background-clip: padding-box;
+		border: 1px solid #EEE;
+		font-weight: 500;
+		height: 50px;
+		line-height: 1.25;
+
+		&.testo {
+			height: 144px;
+		}
+	}
+	
+/*
+	textarea {
+		height: 128px;
+	}
+
+	.form-control {
+		font-size: 14px;
+	}
+
+	textarea {
+		height: 188px;
+	}
+
+	.btn-content {
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		display: flex;
+	}
+
+	.alert {
+		padding: 8px 12px;
+		font-size: 14px;
+
+		i {
+			position: absolute;
+			cursor: pointer;
+			font-size: 24px;
+			z-index: 1;
+			right: 10px;
+			top: 0;
+
+			&:nth-child(1) {
+				right: auto;
+				left: 10px;
+				top: 0;
+			}
+
+			&.close {
+				transition: .3s all ease;
+				font-size: 18px;
+				opacity: .28;
+				top: 5px;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		&.alert-icon {
+			padding: 8px 38px;
+		}
+
+		&-danger {
+			background-color: #FF3E66;
+			border-color: #FF3F66;
+			color: white;
+		}
+
+		&-warning {
+			background-color: #FFDD56;
+			border-color: #FFDD57;
+			margin-left: 16px;
+			color: #725B00;
+		}*/
+}

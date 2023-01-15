@@ -1,0 +1,31 @@
+// Breakpoint Rules
+$breakpoints-min: ( 
+    'xs':   ( max-width: 375px ),
+    'sm':   ( min-width: 376px )  inspect(and) ( max-width: 575px ),
+    'md':   ( min-width: 576px )  inspect(and) ( max-width: 767px ),
+    'lg':   ( min-width: 768px )  inspect(and) ( max-width: 992px ),
+    'xl':   ( min-width: 993px )  inspect(and) ( max-width: 1279px ),
+    'xxl':  ( min-width: 1280px ) inspect(and) ( max-width: 1439px ),
+    'hdr':  ( min-width: 1440px ) inspect(and) ( max-width: 1679px ),
+    'hd':   ( min-width: 1680px ) inspect(and) ( max-width: 1919px ),
+    'full': ( min-width: 1920px ) 
+) !default;
+
+@mixin responsive($breakpoint) {
+
+    // If the key exists in the map
+    @if map-has-key($breakpoints-min, $breakpoint) 
+    {
+        // Prints a media query based on the value
+        @media only screen and #{inspect(map-get($breakpoints-min, $breakpoint))} 
+        {
+            @content;
+        }
+    }
+
+    // If the key doesn't exist in the map
+    @else 
+    {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}

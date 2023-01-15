@@ -1,0 +1,51 @@
+.pagination {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+
+    li {
+        align-items: flex-end;
+        flex-direction: row;
+        margin-right: 4px;
+        flex-wrap: nowrap;
+        display: flex;
+
+        > span {
+            line-height: 1.9;
+            padding: 0 8px;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 600;
+            color: #202942;
+            font-size: 16px;
+            display: block;
+            width: 34px;
+            padding: 4px;
+            height: 34px;
+        }
+
+        &:hover {
+
+            &:not(.active) {
+
+                a {
+                    background-color: #EEE;
+                }                
+            }
+        }
+
+        &.active {
+
+            a {
+                background-color: $color-primary;
+                color: white;
+            }
+        }
+    }
+}

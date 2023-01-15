@@ -1,0 +1,77 @@
+// main: ../index.sass
+@mixin opacity($value) {
+    opacity: $value;
+}
+
+@mixin background($url, $position, $repeat) {
+    background-image: url($url);
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+@mixin rotate($value) {
+    transform: rotate($value);
+}
+
+@mixin shadow($x, $y, $gradient, $color) {
+    box-shadow: $x $y $gradient $color;
+}
+
+@mixin text-shadow($x, $y, $gradient, $color) {
+    text-shadow: $x $y $gradient $color;
+}
+
+@mixin animation($name, $speed, $time) {
+    animation: $name $speed $time;
+}
+
+@mixin cover($url, $position) {
+    @if($url =='') {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTMyQkJBQTg2RUYyMTFFQ0ExNTJBNDAwN0YwNEFFM0UiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTMyQkJBQTk2RUYyMTFFQ0ExNTJBNDAwN0YwNEFFM0UiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3MDI0RENGRjZFREIxMUVDQTE1MkE0MDA3RjA0QUUzRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3MDI0REQwMDZFREIxMUVDQTE1MkE0MDA3RjA0QUUzRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrydAbgAAAAQSURBVHjaYvj//z8DQIABAAj8Av7bok0WAAAAAElFTkSuQmCC');
+    }
+
+    @else {
+        background-image: url($url);
+    }
+
+    @if($position =='') {
+        background-position: center center;
+    }
+
+    @else {
+        background-position: $position;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@mixin transition($speed, $tag, $effect) {
+    transition: $speed $tag $effect;
+}
+
+@mixin radius($value) {
+    border-radius: $value;
+}
+
+@mixin translateY($value) {
+    transform: translateY($value);
+}
+
+@mixin translateX($value) {
+    transform: translateX($value);
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+}
+
+@mixin scale($value) {
+    transform: scale($value);
+}
+
+@mixin gradient($color1, $color2) {
+    background-color: $color1;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+    background-image: -moz-linear-gradient(center top, $color1, $color2);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}

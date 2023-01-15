@@ -1,0 +1,75 @@
+/* Product Description */
+.product-configuration,
+.product-description {
+    padding-left: 40px;
+}
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.product-description h1 {
+    font-weight: 600;
+    font-size: 58px;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 18px 0 34px;
+}
+
+.product-description .description {
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 17px;
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Product Color */
+.product-color {
+    margin-bottom: 30px;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.category-badge {
+    flex-wrap: nowrap;
+    column-gap: 8px;
+    display: flex;
+
+    .badge {
+        padding: 8px 14px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 940px) {
+
+    .product-configuration,
+    .product-description {
+        padding-left: 0;
+    }
+}

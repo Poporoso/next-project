@@ -1,0 +1,40 @@
+
+
+.search-module {
+    margin-bottom: 28px;
+    margin-left: 18px;
+
+    &__title {
+        border-bottom: 2px dashed #E1E5EB;
+        display: inline-block;
+        margin-bottom: 28px;
+        text-align: center;
+        color: #283035;
+        padding: 13px 0;
+    }
+
+    .form-control {
+        box-shadow: none !important;
+        border-right: none;
+    }
+
+    .input-group-text {
+        background-color: white;
+        cursor: pointer;
+
+        &:hover {
+
+            i {
+                opacity: 1;
+            }
+        }
+
+        i {
+            transition: .3s all ease;
+            margin-right: -4px;
+            font-size: 26px;
+            line-height: 1;
+            opacity: .4;
+        }
+    }
+}
