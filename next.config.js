@@ -7,7 +7,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   images: {
-    domains: ["www.andylab.test"],
+    domains: ["www.andylab.it"],
     formats: ["image/avif", "image/webp"],
   },
 }
