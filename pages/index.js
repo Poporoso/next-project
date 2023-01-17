@@ -15,6 +15,7 @@ import Info from '../components/home/Info'
 import Servizi from '../components/home/Servizi'
 import GalleryBlock from '../components/home/GalleryBlock'
 import ContactBox from '../components/home/ContactBox';
+import HeadPage from '../components/head/HeadPage';
 
 // import Servizi from '../components/home/Servizi';
 // import NewsletterBox from '../components/newsletter/NewsletterBoxPopup';
@@ -69,11 +70,11 @@ export default function Home(props) {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{headInfo.title}</title>
                 <meta name="description" content={headInfo.sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             {dataSlider && <CarouselBlock slider={dataSlider} />}
 

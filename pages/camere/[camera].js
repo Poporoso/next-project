@@ -10,6 +10,7 @@ import BookingForm from '../../components/booking/BookingForm'
 import RelatedRooms from '../../components/rooms/RelatedRooms'
 import RoomService from '../../components/rooms/RoomService'
 import HeaderPage from '../../components/header/HeaderPage'
+import HeadPage from '../../components/head/HeadPage';
 import SliderRoom from '../../components/rooms/SliderRoom'
 import Articolo from '../../components/article/Articolo'
 
@@ -53,11 +54,11 @@ const DettaglioCamera = ({ lang, page }) => {
         page &&
         <>
 
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             {
                 sliderRoom ?

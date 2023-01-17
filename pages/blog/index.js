@@ -11,6 +11,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 /** Custom Componets */
 import HeaderPage from '../../components/header/HeaderPage'
+import HeadPage from '../../components/head/HeadPage';
 
 import BlogCard from '../../components/blog/BlogCard';
 import SearchBox from '../../components/search/SearchBox';
@@ -123,11 +124,11 @@ const Blog = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

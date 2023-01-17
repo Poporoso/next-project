@@ -16,6 +16,7 @@ import HeaderPage from '../../components/header/HeaderPage'
 
 import NoArticle from '../../components/no-article/NoArticle'
 import Paginazione from '../../components/paginazione/Paginazione'
+import HeadPage from '../../components/head/HeadPage';
 
 import ServiceCardLarge from '../../components/services/ServiceCardLarge'
 
@@ -148,11 +149,11 @@ const Servizi = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

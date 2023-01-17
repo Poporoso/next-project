@@ -30,8 +30,11 @@ const BookingOfferte = ({ data }) => {
 
     return (
         <>
-            <Card>
-                <Image fill className="card-img-top img-fluid" src={`${process.env.NEXT_PUBLIC_UPLOADS_URL}/${img_anteprima}`} alt={titolo} />
+            <Card className='offerte-card'>
+                <div className="image-fill">
+                    <Image fill className="card-img-top img-fluid" src={`${process.env.NEXT_PUBLIC_UPLOADS_URL}/${img_anteprima}`} alt={titolo} />
+                </div>
+
                 <CardBody className="card-body">
                     <h4 className="card-title">{titolo}</h4>
                     <p className="card-text">

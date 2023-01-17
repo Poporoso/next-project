@@ -478,3 +478,12 @@
         font-weight: 500;
     }
 }
+
+.offerte-card {
+    border: none;
+
+    .image-fill {
+        border-radius: 11px;
+        overflow: hidden;
+    }
+}

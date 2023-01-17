@@ -9,6 +9,7 @@ import { useEffect } from "react";
 // import Loading from '../../components/block/Loading';
 import BlogCard from '../../components/blog/BlogCard';
 import HeaderPage from '../../components/header/HeaderPage';
+import HeadPage from '../../components/head/HeadPage';
 
 import SearchBox from '../../components/search/SearchBox';
 import BlogCategorie from '../../components/blog/sidebar/BlogCategorie';
@@ -132,11 +133,11 @@ const Blog = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

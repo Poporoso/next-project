@@ -1,5 +1,5 @@
 /** Next.Js */
-import Head from 'next/head'
+// import Head from 'next/head'
 import Router from 'next/router';
 
 /** CSS framework */
@@ -8,6 +8,7 @@ import { Container, Row, Col } from 'reactstrap'
 /** Components */
 import Articolo from '../components/article/Articolo'
 import HeaderPage from '../components/header/HeaderPage'
+import HeadPage from '../components/head/HeadPage'
 
 /** Utility */
 import API from '../store/apiData'
@@ -52,11 +53,11 @@ export default function Pages({ lang, page }) {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

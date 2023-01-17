@@ -12,6 +12,7 @@ import HeaderPage from '../../../components/header/HeaderPage'
 
 import Articolo from '../../../components/article/Articolo'
 import Dettagli from '../../../components/dettagli'
+import HeadPage from '../../../components/head/HeadPage';
 
 /** Utility */
 import API from '../../../store/apiData'
@@ -97,11 +98,11 @@ const ArticoloSingolo = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

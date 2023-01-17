@@ -1,6 +1,4 @@
 /* Google font */
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 /* Import */
 html,
 body {
@@ -1321,6 +1319,14 @@ a {
   line-height: 1.4;
   font-size: 16px;
   font-weight: 500;
+}
+
+.offerte-card {
+  border: none;
+}
+.offerte-card .image-fill {
+  border-radius: 11px;
+  overflow: hidden;
 }
 
 .stepper-wrapper {
@@ -3087,9 +3093,7 @@ a {
 .pagination li.active a {
   background-color: #2F55D4;
   color: white;
-}
-
-/* Gestione Users */
+} /* Gestione Users */
 .login-box {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;

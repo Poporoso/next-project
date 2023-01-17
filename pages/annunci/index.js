@@ -16,6 +16,7 @@ import { useDispatch } from 'react-redux'
 
 /** Local components */
 import HeaderPage from '../../components/header/HeaderPage'
+import HeadPage from '../../components/head/HeadPage';
 
 import AnnuncioCard from '../../components/annunci/AnnuncioCard'
 import SearchVerticale from '../../components/annunci/moduli/SearchVerticale'
@@ -113,11 +114,11 @@ const Annunci = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

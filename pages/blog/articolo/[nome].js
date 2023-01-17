@@ -10,6 +10,7 @@ import { Container, Row, Col } from "reactstrap";
 
 /** Custom components */
 import HeaderPage from '../../../components/header/HeaderPage'
+import HeadPage from '../../../components/head/HeadPage';
 import SearchBox from '../../../components/search/SearchBox';
 import BlogCategorie from '../../../components/blog/sidebar/BlogCategorie';
 import BlogRecenti from '../../../components/blog/sidebar/BlogRecenti';
@@ -100,11 +101,11 @@ const BlogArticle = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{renderText(title)}</title>
                 <meta name="description" content={renderText(sub_title)} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

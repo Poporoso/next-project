@@ -14,6 +14,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 /** Local components */
 import HeaderPage from '../../../components/header/HeaderPage.js'
+import HeadPage from '../../../components/head/HeadPage';
 import Loading from '../../../components/block/Loading'
 
 import AnnuncioCard from '../../../components/annunci/AnnuncioCard'
@@ -136,11 +137,11 @@ const AnnunciSearch = ({ lang, pageNumber }) => {
         <>
             <Loading status={isLoading} />
 
-            <Head>
+            <HeadPage>
                 <title>{html?.title}</title>
                 <meta name="description" content={html?.sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title: html?.title,

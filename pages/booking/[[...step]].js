@@ -6,6 +6,7 @@ import { Container, Row, Col } from "reactstrap"
 
 import BookingForm from '../../components/booking/BookingForm'
 import BookingRiepilogo from '../../components/booking/BookingRiepilogo'
+import HeadPage from '../../components/head/HeadPage';
 
 /** Booking components */
 import BookingRoomList from '../../components/booking/BookingRoomList'
@@ -37,6 +38,11 @@ const Booking = () => {
 
     return (
         <>
+            <HeadPage>
+                <title>Booking</title>
+                <meta name="description" content="Booking reserve" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </HeadPage>
             <div style={{ padding: '34px 0' }}></div>
             <section style={{ backgroundColor: '#F4F6F8' }}>
                 <Container>

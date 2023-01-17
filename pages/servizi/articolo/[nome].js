@@ -3,6 +3,7 @@ import React from 'react'
 
 /** Next.Js */
 import Head from 'next/head';
+import HeadPage from '../../../components/head/HeadPage';
 
 /** Reactstrap CSS framework */
 import { Container, Row, Col } from "reactstrap";
@@ -97,11 +98,11 @@ const ArticoloSingolo = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

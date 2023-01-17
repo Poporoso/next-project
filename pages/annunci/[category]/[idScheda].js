@@ -23,6 +23,7 @@ import API from '../../../store/apiData'
 
 /** Custom components */
 import HeaderPage from '../../../components/header/HeaderPage.js'
+import HeadPage from '../../../components/head/HeadPage';
 import Footer from '../../../components/footer/Footer'
 import Navbar from '../../../components/navbar/Navbar'
 
@@ -136,11 +137,11 @@ const AnnuncioSingolo = ({ id, lang, page }) => {
     /** Rendering */
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{html.title}</title>
                 <meta name="description" content={html.sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title: html.title,

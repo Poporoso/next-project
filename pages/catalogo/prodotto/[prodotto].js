@@ -11,6 +11,7 @@ import { Badge, Col, Container, Row } from 'reactstrap'
 /** Custom Componets */
 import Navbar from '../../../components/navbar/Navbar'
 import HeaderPage from '../../../components/header/HeaderPage'
+import HeadPage from '../../../components/head/HeadPage'
 import Footer from '../../../components/footer/Footer'
 
 import Slider from '../../../components/widget/components/slider/Slider'
@@ -90,11 +91,11 @@ const ProdottoPage = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

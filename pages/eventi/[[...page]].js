@@ -14,6 +14,7 @@ import API from '../../store/apiData'
 
 /** Local components import */
 import HeaderPage from '../../components/header/HeaderPage'
+import HeadPage from '../../components/head/HeadPage';
 
 import NoArticle from '../../components/no-article/NoArticle'
 import Paginazione from '../../components/paginazione/Paginazione'
@@ -148,11 +149,11 @@ const Eventi = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,

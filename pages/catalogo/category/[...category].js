@@ -9,6 +9,7 @@ import { Col, Container, Row } from 'reactstrap';
 
 /** Custom Componets */
 import HeaderPage from '../../../components/header/HeaderPage'
+import HeadPage from '../../../components/head/HeadPage';
 
 import Loading from '../../../components/block/Loading';
 import ProdottoCard from '../../../components/prodotti/ProdottoCard';
@@ -99,11 +100,11 @@ const CatalogoCategory = ({ lang, page }) => {
 
     return (
         <>
-            <Head>
+            <HeadPage>
                 <title>{title}</title>
                 <meta name="description" content={sub_title} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
+            </HeadPage>
 
             <HeaderPage options={{
                 title,
